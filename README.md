@@ -1,18 +1,16 @@
-# NYC Airbnb Market Expansion Strategy (SQL)
+# NYC Airbnb Market Expansion Strategy (SQL + Power BI)
+
+## Executive Dashboard
+![Power BI Dashboard](dashboard_preview.png)
 
 ## Overview
-An exploratory data analysis of the New York City Airbnb dataset to identify optimal neighborhood expansion targets. By evaluating price distributions, supply density, and review-based demand metrics, this analysis pinpoints underserved, high-yield markets across all five boroughs.
+An end-to-end data analytics project using SQL for data cleaning and exploratory analysis, and Power BI for executive dashboard visualization.
 
-## Core Analysis & Findings
-* **Data Preparation:** Cleaned text fields using string casing functions and populated null review values with baseline defaults.
-* **Supply & Price Distribution:** Calculated average nightly prices and total active listings grouped by borough and individual neighborhoods.
-* **High-Demand / Low-Supply Opportunities:** Filtered for neighborhoods with fewer than 10 total listings but an average review frequency exceeding 2 reviews/month to flag high-demand, low-competition markets.
+## Project Structure
+* `NYC Airbnb Data Analysis.sql` — SQL queries for data cleaning, aggregation, and market analysis.
+* `NYC_Airbnb_Dashboard.pbix` — Interactive Power BI dashboard report.
+* `dashboard_preview.png` — High-resolution screenshot of the final report.
 
-## Key Business Recommendations
-* Targeted high-performing, low-density neighborhoods offer the strongest immediate yield potential for host expansion without overcrowding existing saturated markets.
-
-## Skills & Concepts Used
-* Aggregations & Groupings (`GROUP BY`, `HAVING`)
-* Window Functions (`AVG() OVER(PARTITION BY...)`)
-* Conditional Logic (`CASE WHEN`)
-* Market Basket & Demand Analysis
+## Key Insights & Strategy
+* **High-Yield Markets:** Identified underserved neighborhoods with low active listing counts (<10) but high review rates (>2 reviews/month).
+* **Pricing Strategy:** Mapped average nightly rates across all five boroughs to highlight competitive entry pricing for new hosts.
